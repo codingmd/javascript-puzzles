@@ -6,37 +6,58 @@
 
 
 function pluralize (num, word) {
-	if (word.charAt(word.length-1) == 's' || num <= 0 || num > 1) {
-		if (word == 'sheep' || word == 'fish' || word == 'bison' || word == 'deer') {
+	if (num > 1 || num == 0) {
+		if (word.charAt(word.length-1) == 's' || word == 'sheep' || word == 'fish' || 
+			word == 'bison' || word == 'deer') {
 			var plural = word;
 		}
 		else if (word == 'goose') {
 			var plural = 'geese';
 		}
-		document.write(num + ' ' + plural);
-	}
-	else if (num =={
-
-				var plural = word + 's';
-			}
-			document.write(num + ' ' + plural);
+		else {
+			var plural = word + 's';
 		}
-		else if (num == 1) {
-			if (word == 'geese') {
-				var singular = 'goose';
+		while (num >= 0) {
+			if (num > 1) {
+				document.write(num + ' ' + plural);
 			}
 			else {
-				var singular = word;
+				document.write('No ' + plural);
+
 			}
-			document.write("That\'s singular: " + num + ' ' + singular);
+			var num = -1;
+		}
+
+	}
+	else if (num == 1) {
+		if (word.charAt(word.length-1) == 's') {
+			var singular = word.slice(0,(word.length-1));
+		}
+		else if (word == 'sheep' || word == 'fish' || word == 'bison' || word == 'deer') {
+			var singular = word;
+		}
+		else if (word == 'geese') {
+			var singular = 'goose';
 		}
 		else {
-			document.write(num + ' number of ' + word + 'can\'t happen!');
-		}	
+			var singular = word;
+		}
+		document.write(num + ' ' + singular);
+	}
+	else {
+		if (word.charAt(word.length-1) == 's') {
+			document.write(num + ' ' + word + ' can\'t happen!');
+		}
+		else {
+			document.write(num + ' ' + word + 's can\'t happen!');
+		}
+	}
+	document.write('<br>');	
 }
 
-function(3,frog);
-function(5,cats);
-function(1,bees);
-function(1,bee);
-function(1,sun);
+pluralize(3,'frog');
+pluralize(5,'cats');
+pluralize(1,'bees');
+pluralize(1,'bee');
+pluralize(-10,'suns');
+pluralize(-10,'sun');

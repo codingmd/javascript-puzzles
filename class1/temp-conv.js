@@ -7,10 +7,10 @@ var tempConv = {
 	celsius: 100,
 	fahrenheit: 120,
 	convToFahrenheit: function() {
-		return (this.celsius * 9 / 5) + 32	
+		return (this.celsius * 9 / 5) + 32;	
 	},
 	convToCelsius: function() {
-		return (this.fahrenheit - 32) / 9 * 5
+		return (this.fahrenheit - 32) / 9 * 5;
 	},
 	tempConv: function () {
 		document.write(this.celsius + '\u00B0C is ' + tempConv.convToFahrenheit().toFixed(1) + '\u00B0F<br>' +

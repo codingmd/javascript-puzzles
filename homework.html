@@ -8,17 +8,22 @@
 				margin-left: 10px;
 				background-color: black;
 			}
-			h1 {
+			h1,h2 {
 				color: red;
 			}
 
-			h3, #top-link {
-				color: darkblue;
+			h3, #top-link, h4 {
+				color: lightblue;
 				margin-left: 1em;
 			}
 
+			p {
+				color: pink;
+				margin-left: 1.5em;
+			}
+
 			#top-link {
-				color: red;
+				color: yellow;
 			}
 
 			.answer {
@@ -41,21 +46,29 @@
 		<div>
 			<h2 id="one">Class 1</h2>
 			<h3>The Fortune Teller</h3>
+			<h4>Given the variables: number of children, partner's name, geographic location, and job title <br>Produce a fortune to the screen.</h4>
+			<p>Input: (1)Variables: numChildren = 2, partnerName = 'Cindy', geoLocation = 'SD', jobTitle = 'software developer'<br>(2)Object: numChildren: 2, partnerName: 'Cindy', geoLocation: 'San Diego', jobTitle: 'software developer'</p>
 			<div class='answer'>
 				<script src="class1/fortune-teller.js"></script>
 			</div>
 
 			<h3>The Age Calculator</h3>
+			<h4>Calculate person's age based on birth year.</h4>
+			<p>Input: (1)Variables: current year = 2017, birthYear= 1997,<br>(2)Object: current year: 2017, birthYear: 1987</p>
 			<div class='answer'>
 				<script src="class1/age-calc.js"></script>
 			</div>
 			
 			<h3>The Temperature Converter</h3>
+			<h4>Convert celsius tempatures to fahrenheit and vice versa.</h4>
+			<p>Input: celsius: 100, fahrenheit: 120</p>
 			<div class='answer'>
 					<script src="class1/temp-conv.js"></script>
 			</div>
 
 			<h3>Challenge Question: Using Math functions</h3>
+			<h4>For fahrenheit tempature use Math.random() to generate a random tempature between 0 and 100, and calculate it's celsius conversion.</h4>
+			<p>Input: fahrenheit: Math.random() * 100</p>
 			<div class='answer'>
 				<script src="class1/chall-quest.js"></script>
 			</div>
@@ -66,8 +79,9 @@
 		
 		<div>
 			<h2 id="two">Class 2</h2>
-
 			<h3>The Fortune Teller: With Functions!</h3>
+			<h4>Write a function named tellFortune that takes 4 arguments: number of children, partner's name, geographic location, job title and outputs your fortune to the screen.</h4>
+			<p>Input: (3,'Cindy','London','designer'), (4,'Cindy','Canada','engineer'),<br>(5,'Cindy','London','playwright')</p>
 			<div class='answer'>
 				<script src="class2/fortune-teller-function.js"></script>
 			</div>
@@ -78,18 +92,25 @@
 			</div>
 		
 			<h3>What number is bigger?</h3>
+			<h4>A function that compares two numbers and returns the larger one. Bonus: add error messages if the numbers are equal or cannot be compared.</h4>
+			<p>Input: (5,10), (10,5), (-50,0), (-100,-50), (0,0), (0,'0'), ('tuna',1)</p>
 			<div class='answer'>
 				<script src="class2/bigger-number.js"></script>
 			</div>
 
 			<h3>Pluralize</h3>
+			<h4>A function that takes in two arguments, a number and a word, and returns the plural. Bonus: Make it handle a few collective nouns like "sheep" and "geese", and singular cases.</h4>
+			<p>Input: (3,'frog'), (5,'cats'), (1,'bees'), (1,'bee'), (-10,'suns'), (-10,'sun')</p>
 			<div class='answer'>
 				<script src="class2/pluralize.js"></script>
 			</div>
 
 			<h3>The Calculator</h3>
+			<h4>1)A function called squareNumber that will take one argument (a number), square that number, and return the result.<br>2)A function called halfNumber that will take one argument (a number), divide it by 2, and return the result.<br>3)A function called percentOf that will take two numbers, figure out what percent the first number represents of the second number, and return the result.<br>4)A function called areaOfCircle that will take one argument (the radius), calculate the area based on that, and return the result.<br>&nbsp;Bonus: Round the result so there are only two digits after the decimal.<br> 5)A function that will take one argument (a number) and perform the following operations, using the functions you wrote earlier:<br>
+			Take half of the number and store the result.<br>Square the result of #1 and store that result.
+			<br>Calculate the area of a circle with the result of #2 as the radius.<br>Calculate what percentage that area is of the squared result (#3).</h4>
 			<div class='answer'>
-				<script src="class2/.js"></script>
+				<script src="class2/calculator.js"></script>
 			</div>
 
 			<h3>Challenge Question: String Manipulation</h3>
