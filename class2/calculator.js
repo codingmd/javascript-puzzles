@@ -14,6 +14,7 @@ squareNumber(2);
 function halfNumber (num) {
 	var half = num / 2;
 	console.log('2) Half of ' + num + ' is ' + half.toFixed(1) + '.');
+	return half;
 }
 halfNumber(5);
 
@@ -49,10 +50,11 @@ areaOfCircle(2);
 // #3 Calculate the area of a circle with the result of #2 as the radius.
 // #4 Calculate what percentage that area is of the squared result (#3).
 function compCalc (number) {
+	console.log('5) below');
 	var halved = halfNumber(number);
 	var squared = squareNumber(halved);
 	var areaCirc = areaOfCircle(squared);
-	var percentage = percentOf(areaOfCircle(squareNumber(halfNumber(number))), squareNumber(halfNumber(number)));
-	document.write(percentage);
+	var percentage = percentOf(areaCirc, squared);
+	document.write('5) The percentage the area of a circle is of the radius:' + percentage.toFixed(1) + "%");
 }
 compCalc(1);
