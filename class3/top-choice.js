@@ -10,7 +10,9 @@ var topChoice = {
 	favoriteDecades: [80, 90]
 }
 
+index = 0;
 for (var i in topChoice) {
+	document.write(Object.keys(topChoice)[index] + '<br>');
 	if (topChoice.hasOwnProperty(i)) {
 		var element = 0;
 		// document.write(Object.keys(topChoice)[element] + '<br>');
@@ -29,5 +31,7 @@ for (var i in topChoice) {
 			}	
 		}
 	}
+	document.write('<br>');
+	index++;
 }
 
