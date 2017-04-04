@@ -17,14 +17,12 @@ var bookList = [
 
 function logBook(bookList) {
 	for (var i = 0; i < this.bookList.length; i++) {
-		document.write('\"' + bookList[i].title + '\" by ' + bookList[i].author +'<br>')
+		document.write(bookList[i].title + ' by ' + bookList[i].author + '<br>');
 		if (this.bookList[i].alreadyRead) {
-			document.write('You already read \"' + bookList[i].title + '\" by ' +
-				bookList[i].author + '<br>');
+			document.write('You already read \"' + bookList[i].title + '\" by ' + bookList[i].author + '<br><br>');
 		}
 		else {
-			document.write('You still need to read \"' + bookList[i].title + '\" by ' +
-				bookList[i].author + '<br>');
+			document.write('You still need to read \"' + bookList[i].title + '\" by ' + bookList[i].author + '<br><br>');
 		}
 	}
 }
