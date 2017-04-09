@@ -10,9 +10,9 @@
 //  Rings" by J.R.R. Tolkien."
 
 var bookList = [
-	{'title': 'Book 1', 'author': 'John Deer', 'alreadyRead': true},
-	{'title': 'Book 2', 'author': 'Amy Doe', 'alreadyRead': false},
-	{'title': 'Book 3', 'author': 'Fred Daily', 'alreadyRead': true}
+	{'title': 'Green Eggs And Ham', 'author': 'Dr. Seuss', 'alreadyRead': true},
+	{'title': 'The Planet Of The Apes', 'author': 'Pierre Boulle', 'alreadyRead': false},
+	{'title': 'The Catcher In The Rye', 'author': 'J.D. Salinger', 'alreadyRead': true}
 ];
 
 function logBook(bookList) {
