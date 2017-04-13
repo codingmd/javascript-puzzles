@@ -9,20 +9,16 @@ pageBody.style.fontFamily = 'Arial, sans-serif';
 
 //(In JavaScript) Replace the content of each of the spans (nickname, favorites, hometown) 
 //with your own information.
-nickname = document.getElementById('nickname');
-nickname.innerHTML = 'Marty';
-favorites = document.getElementById('favorites');
-favorites.innerHTML = 'Hiking, running,...';
-hometown = document.getElementById('hometown');
-hometown.innerHTML = 'Somewhere';
+document.getElementById('nickname').innerHTML = 'Marty';
+document.getElementById('favorites').innerHTML = 'Hiking, running,...';
+document.getElementById('hometown').innerHTML = 'Somewhere';
 
 //Iterate through each li and add a class of "listitem". Add a style tag that sets a rule 
 //for "listitem" to make the color red.
 var liElements = document.getElementsByTagName('li');
 for (var i = 0; i < liElements.length; i++) {
 	liElements[i].setAttribute("class","listitem");
-	var elements = document.getElementsByClassName('listitem');
-	elements[i].style.color = 'red';
+	document.getElementsByClassName('listitem').style.color = 'red';
 }
 
 
